@@ -1,15 +1,21 @@
 {
   "name": "sample-node-app",
   "scripts": {
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup": "npm install eslint -g",
+          "test": "eslint index.js"
+        }
+      }
+    }
   },
   "formation": {
     "web": {
       "quantity": 1
     }
   },
-  "addons": [
-
-  ],
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
