@@ -11,13 +11,5 @@
     {
       "url": "heroku/nodejs"
     }
-  ],
-  "environments": {
-    "test": {
-      "scripts": {
-        "test-setup": "npm install eslint -g && eslint --init",
-        "test": "eslint index.js"
-      }
-    }
-  }
+  ]
 }
